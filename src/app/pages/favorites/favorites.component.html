@@ -1,0 +1,7 @@
+<app-page-header [title]="title" [description]="description"></app-page-header>
+
+@if (photosLength$ | async) {
+<app-photo-list [photosList$]="photosList$" [photosLength$]="photosLength$"></app-photo-list>
+} @else {
+<app-no-favotires-message></app-no-favotires-message>
+}

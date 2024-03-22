@@ -1,0 +1,14 @@
+.order-by {
+  background-color: var(--color-grey-f);
+  border: 1px solid var(--color-grey-d);
+  border-radius: 0.25rem;
+  padding: 0.75rem 0.5rem;
+  width: 220px;
+  font-family: inherit;
+}
+
+@media (max-width: 768px) {
+  .order-by {
+    width: 100%;
+  }
+}

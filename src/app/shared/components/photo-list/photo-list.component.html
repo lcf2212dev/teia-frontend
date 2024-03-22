@@ -1,0 +1,16 @@
+<div class="list">
+  <section class="list__controls">
+    <app-order-by [formControl]="orderBy"></app-order-by>
+  </section>
+
+  <section class="list__grid">
+    @for (photo of photosSlice$ | async; track $index) {
+    <app-photo-card [photo]="photo"></app-photo-card>
+    }
+  </section>
+
+  @if (photosLength$ | async; as photosLength) {
+  <app-paginator [length]="photosLength" [pageSize]="pageSize"
+    (pageIndexChange)="pageIndexChange($event)"></app-paginator>
+  }
+</div>

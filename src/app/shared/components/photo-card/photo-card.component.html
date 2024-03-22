@@ -1,0 +1,6 @@
+<a routerLink="/photo/{{ photo.id }}" class="card" [attr.aria-label]="photo.title">
+  <figure class="card__figure">
+    <img class="card__image" src="{{ photo.thumbnailUrl }}" alt="{{ photo.title }}">
+    <figcaption class="card__figcation">{{ photo.title }}</figcaption>
+  </figure>
+</a>

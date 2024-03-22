@@ -1,0 +1,24 @@
+<header class="header">
+  <div class="header__branding">
+    <h1><strong>TEIA</strong> Fotos</h1>
+  </div>
+
+  <nav class="header__nav">
+    <ul class="header__nav__list">
+      <li class="header__nav__item">
+        <a class="header__nav__link" routerLink="/home" routerLinkActive="active">Home</a>
+      </li>
+
+      <li class="header__nav__item">
+        <a class="header__nav__link" routerLink="/favorites" routerLinkActive="active">Favoritas</a>
+        @if (favoritesLength$ | async; as favoritesLength) {
+        <span class="header__badge">{{ favoritesLength }}</span>
+        }
+      </li>
+    </ul>
+  </nav>
+
+  <section class="header__author">
+    <p>Desenvolvido por <strong>Leandro Caetano de Faria</strong></p>
+  </section>
+</header>

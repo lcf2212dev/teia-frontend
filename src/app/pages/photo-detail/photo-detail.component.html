@@ -1,0 +1,51 @@
+@if (photo$ | async; as photo) {
+<div class="photo-detail">
+  <app-page-header [title]="title" [showBackButton]="true"></app-page-header>
+
+  <section class="photo-detail__content">
+    <img class="photo-detail__image" [src]="photo.url" [alt]="photo.title">
+
+
+    <div class="photo-detail__details">
+      <dl class="photo-detail__data-list">
+        <span>
+          <dt>Title</dt>
+          <dd>{{ photo.title }}</dd>
+        </span>
+
+        <span>
+          <dt>Photo ID</dt>
+          <dd>{{ photo.id }}</dd>
+        </span>
+
+        <span>
+          <dt>Album ID</dt>
+          <dd>{{ photo.albumId }}</dd>
+        </span>
+
+        <span>
+          <dt>Thumbnail URL</dt>
+          <dd>{{ photo.thumbnailUrl }}</dd>
+        </span>
+
+        <span>
+          <dt>URL</dt>
+          <dd>{{ photo.url }}</dd>
+        </span>
+      </dl>
+
+      @if (isFavorite$ | async) {
+      <button class="photo-detail__button remove" (click)="removeFromFavorites(photo)">
+        Remove from Favorites
+      </button>
+
+      } @else {
+      <button class="photo-detail__button add" (click)="addToFavorites(photo)">
+        Add to Favorites
+      </button>
+      }
+    </div>
+
+  </section>
+</div>
+}

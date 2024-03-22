@@ -1,0 +1,5 @@
+<select #select (change)="onSelectionChange(select.value)" class="order-by">
+  @for (option of options; track $index) {
+  <option [value]="option.value">{{ option.label }}</option>
+  }
+</select>

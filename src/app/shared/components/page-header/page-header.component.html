@@ -1,0 +1,13 @@
+<header class="header">
+  @if (showBackButton) {
+  <app-back-button></app-back-button>
+  }
+
+  <div>
+    <h2 class="header__title">{{ title }}</h2>
+
+    @if (description) {
+    <p class="header__description">{{ description }}</p>
+    }
+  </div>
+</header>

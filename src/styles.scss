@@ -1,0 +1,67 @@
+@import "./styles/css-variables.scss";
+@import "./styles/fonts";
+
+html {
+  font-family: "Lato", sans-serif;
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  color: var(--color-grey-6);
+  color: var(--color-grey-6);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--color-grey-6);
+}
+
+input {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: var(--color-grey-6);
+}
+
+select {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: var(--color-grey-6);
+}
+
+button {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: var(--color-grey-6);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

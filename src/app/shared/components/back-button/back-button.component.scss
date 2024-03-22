@@ -1,0 +1,24 @@
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-secondary);
+  color: var(--color-grey-f);
+  border: none;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--color-primary);
+  }
+
+  &__icon {
+    font-size: 1.5rem;
+    color: var(--color-grey-f);
+  }
+}

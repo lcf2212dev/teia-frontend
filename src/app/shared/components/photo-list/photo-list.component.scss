@@ -1,0 +1,25 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  &__controls {
+    text-align: right;
+  }
+
+  &__grid {
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    border: 1px solid var(--color-grey-d);
+    border-radius: 0.5rem;
+    background-color: var(--color-grey-e);
+  }
+}
+
+app-paginator {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
