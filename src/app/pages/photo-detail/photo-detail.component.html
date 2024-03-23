@@ -36,16 +36,15 @@
 
       @if (isFavorite$ | async) {
       <button class="photo-detail__button remove" (click)="removeFromFavorites(photo)">
-        Remove from Favorites
+        Remover das Favoritas
       </button>
 
       } @else {
       <button class="photo-detail__button add" (click)="addToFavorites(photo)">
-        Add to Favorites
+        Favoritar!
       </button>
       }
     </div>
-
   </section>
 </div>
 }
