@@ -1,25 +1,35 @@
 .list {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 
   &__controls {
     text-align: right;
   }
 
   &__grid {
-    padding: 1.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 1rem;
     border: 1px solid var(--color-grey-d);
     border-radius: 0.5rem;
     background-color: var(--color-grey-e);
-  }
-}
 
-app-paginator {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    @media (max-width: 480px) {
+      gap: 0.5rem;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background-color: unset;
+    }
+
+    @media (max-width: 320px) {
+      grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+    }
+  }
 }

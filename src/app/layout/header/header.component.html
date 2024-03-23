@@ -6,11 +6,17 @@
   <nav class="header__nav">
     <ul class="header__nav__list">
       <li class="header__nav__item">
-        <a class="header__nav__link" routerLink="/home" routerLinkActive="active">Home</a>
+        <a class="header__nav__link" routerLink="/home" routerLinkActive="active">
+          <span class="header__nav__icon material-symbols-outlined">home</span>
+          Todas Fotos
+        </a>
       </li>
 
       <li class="header__nav__item">
-        <a class="header__nav__link" routerLink="/favorites" routerLinkActive="active">Favoritas</a>
+        <a class="header__nav__link" routerLink="/favorites" routerLinkActive="active">
+          <span class="header__nav__icon material-symbols-outlined">star</span>
+          Fotos Favoritas
+        </a>
         @if (favoritesLength$ | async; as favoritesLength) {
         <span class="header__badge">{{ favoritesLength }}</span>
         }

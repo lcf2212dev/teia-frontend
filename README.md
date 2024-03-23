@@ -1,24 +1,30 @@
-# Teia
+# TEIA - Desafio Frontend 2
 
-## TO DO
+Por Leandro Caetano de Faria (c112568)
 
-* colocar na nuvem
-* mandar o git
+## Decisões Arquiteturais
 
-- escrever a documentacao
+### Versão Angular
+v17.2
 
-- deferrable
-- tema escuro
+### NgRx
+O NgRx foi utilizado para gerenciar o estado global da aplicação, facilitando assim o compartilhamento de dados entre diferentes componentes e garantindo a consistência do estado.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
+### ChangeDetection.OnPush
+A estratégia de detecção de mudanças OnPush foi utilizada de forma a garantir que os componentes sejam atualizados apenas quando necessário para otimizar a performance da aplicação.
+
+### Ausência bibliotecas externas
+O projeto foi desenvolvido sem a utilização de bibliotecas externas para demonstrar a habilidade do desenvolvedor em criar componentes personalizados.
+
+### Feature Preview (signals)
+Utilizada para explorar recursos futuros do Angular.
+
+### Standalone components
+Os componentes autônomos ("standalone components") foram utilizados para tornar o código mais limpo e facilitar a manutenção do código - caso fosse existir.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
@@ -27,11 +33,3 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

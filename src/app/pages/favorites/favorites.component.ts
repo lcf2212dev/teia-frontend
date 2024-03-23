@@ -24,7 +24,7 @@ import { PageHeaderComponent } from '../../shared/components/page-header/page-he
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FavoritesComponent {
-  protected readonly title = 'Favoritas';
+  protected readonly title = 'Fotos Favoritas';
   protected readonly description = 'Veja as fotos que você mais gostou!';
   protected readonly photosLength$ = this.store.select(selectFavoritesLength);
   protected readonly photosList$ = this.store.select(selectFavoritesList);

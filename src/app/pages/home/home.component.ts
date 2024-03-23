@@ -13,7 +13,7 @@ import { PageHeaderComponent } from '../../shared/components/page-header/page-he
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeComponent {
-  protected readonly title = 'Home';
+  protected readonly title = 'Todas Fotos';
   protected readonly description = 'Veja as fotos mais incríveis da internet!';
   protected readonly photosLength$ = this.store.select(selectPhotosLength);
   protected readonly photosList$ = this.store.select(selectPhotosList);
